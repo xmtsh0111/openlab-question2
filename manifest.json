@@ -1,0 +1,27 @@
+{
+"manifest_version":3,
+"name":"Do A Dream",
+"version":"1.0",
+"description":"vedio plug-in",
+"icons":{
+	"128":"plug-in.jpg",
+	"48":"plug-in.jpg",
+	"16":"plug-in.jpg"
+	},
+	
+"action":{
+	"default_icon":"plug-in.jpg",
+	"default_popup":"plug-in.html"
+	},
+//申请权限
+"permissions":["activeTab"],
+//插入页面的脚本代码	
+"content_scripts": [
+    {
+     "matches": ["https://www.bilibili.com/video/*"],
+     "js": ["background.js"],
+	 "run_at":"document_start"
+	}]
+	
+
+}

@@ -1,0 +1,11 @@
+body {
+       width: 200px;
+       padding: 10px;
+   }
+input {
+       width: 150px;
+       margin-bottom: 5px;
+   }
+button {
+       width: 100%;
+   }
